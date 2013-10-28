@@ -1,0 +1,137 @@
+﻿body {
+    color: black;
+	font-family: Gill Sans, Verdana, Helvetica, sans-serif;
+	font-size: 14pt;
+	margin: 0 auto;}
+
+.deletedrecipe {
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.cssgridview {
+    width: 100%;
+    background: orange;
+    border:solid 1px black;
+}
+
+.cssgridview {
+    background-color: pink;
+    margin: 5px 0 10px 0;
+    border: solid 1px #525252;
+    border-collapse: collapse;
+    text-align:center;
+    font-variant:small-caps;
+}
+
+.cssgridview td {
+    padding: 10px;
+    border: solid 1px #c1c1c1;
+    color: white;
+}
+
+.cssgridview th {
+    padding: 4px 2px;
+    color: white;
+    background: yellow;
+    border-left:solid 1px #525252;
+    font-size:0.9em;
+}
+
+.cssgridview th a {
+    color: silver;
+    text-decoration: none;
+}
+
+.cssgridview th a:hover {
+    color: silver;
+    text-decoration: underline;
+}
+
+.cssgridview .alt {
+    background: pink;
+}
+
+.cssgridview .pgr {
+    background: yellow;
+}
+
+.cssgridview .pgr table {
+    margin: 5px 0;
+}
+
+.cssgridview .pgr td {
+    border-width: 0;
+    padding: 0 6px;
+    border-left: solid 1px #666;
+    font-weight: bold;
+    color: orange;
+}
+
+.cssgridview .pgr a {
+    color: blue;
+    text-decoration: none;
+}
+
+.cssgridview .pgr a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+#container {
+    background: tan;padding:20px;width:900px;margin: 0 auto;border:solid 2px black;
+}
+
+#menu {
+    background: orange;padding:20px;width:574px;float:left;
+}
+
+#date {
+    background: lightblue;padding:23px;width:240px;float:right;font-size:11pt;
+}
+
+#content {
+    background: white;padding:20px;clear:both;
+}
+
+#footer {
+    background: green;padding:20px;text-align:center;
+}
+
+#nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav li {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+#nav li:before {
+    content: "| ";
+}
+
+#nav li:first-child:before {content: "";
+}
+
+* html #nav li {
+    border-left: 1px solid black;
+    padding: 0 0.4em 0 0.4em;
+    margin: 0 0.4em 0 -0.4em;
+}
+
+* html #nav {height:1%;
+}
+
+* html #nav li {
+    display:block; float:left;
+}
+
+* html #nav li:first-child child {
+    border-left: 0;
+}
