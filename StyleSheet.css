@@ -1,9 +1,21 @@
 ﻿body {
+	background-color: tan;
     color: black;
 	font-family: Gill Sans, Verdana, Helvetica, sans-serif;
-	font-size: 14pt;
-	margin: 0 auto;}
+	font-size: 12pt;
+	margin: 100px 100px 100px 100px;}
 
+h1.title {
+	text-align:center;
+	font-family: Gill Sans, Verdana, Helvetica, sans-serif;
+	font-size: 20pt;
+}
+
+p.cont{
+	text-align:center;
+	font-family: Gill Sans, Verdana, Helvetica, sans-serif;
+	font-size: 16pt;
+}
 .deletedrecipe {
     color: red;
     font-style: italic;
@@ -12,13 +24,7 @@
 }
 
 .cssgridview {
-    width: 100%;
-    background: orange;
-    border:solid 1px black;
-}
-
-.cssgridview {
-    background-color: pink;
+    background-color: coral;
     margin: 5px 0 10px 0;
     border: solid 1px #525252;
     border-collapse: collapse;
@@ -32,12 +38,15 @@
     color: white;
 }
 
+.cssgridview td a{
+    color: silver;
+}
+
 .cssgridview th {
     padding: 4px 2px;
-    color: white;
+    color: silver;
     background: yellow;
     border-left:solid 1px #525252;
-    font-size:0.9em;
 }
 
 .cssgridview th a {
@@ -51,7 +60,7 @@
 }
 
 .cssgridview .alt {
-    background: pink;
+    background: coral;
 }
 
 .cssgridview .pgr {
@@ -67,11 +76,11 @@
     padding: 0 6px;
     border-left: solid 1px #666;
     font-weight: bold;
-    color: orange;
+    color: silver;
 }
 
 .cssgridview .pgr a {
-    color: blue;
+    color: silver;
     text-decoration: none;
 }
 
@@ -80,16 +89,22 @@
     text-decoration: underline;
 }
 
+.cssdetailsview {background:#fff; margin:5px 0 5px 0;}
+.cssdetailsview td {padding:5px ;border:solid 1px #c1c1c1;}
+.cssdetailsview .header td {padding:4px 2px; color:white; background-color:silver; text-align:center;}
+.cssdetailsview .fieldheader {color:red; width:150px:}
+.cssdetailsview .altrow {background:#fcfcfc}
+.cssdetailsview .command  {background: white; }
+.cssdetailsview .command td {text-align:center; background:white}
+.cssdetailsview .command a {color:black; text-decoration:none;}
+.cssdetailsview .command a:hover {color:blue; text-decoration:none;}
+
 #container {
-    background: tan;padding:20px;width:900px;margin: 0 auto;border:solid 2px black;
+    background: white;padding:20px;width:600px;margin: 0 auto;border:solid 2px black;
 }
 
-#menu {
-    background: orange;padding:20px;width:574px;float:left;
-}
-
-#date {
-    background: lightblue;padding:23px;width:240px;float:right;font-size:11pt;
+#details {
+   margin: 0 70px 0 70px
 }
 
 #content {
@@ -97,10 +112,11 @@
 }
 
 #footer {
-    background: green;padding:20px;text-align:center;
+    background: white;text-align:center;
 }
 
 #nav {
+	text-align:center;
     list-style: none;
     padding: 0;
     margin: 0;

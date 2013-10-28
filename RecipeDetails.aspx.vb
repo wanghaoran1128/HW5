@@ -12,24 +12,18 @@ Partial Class Default2
         'Response.Write("<span class=deletedrecipe>")
         'Response.Write(delRecipe)
         'Response.Write("</span> has been deleted from the database")
-        Response.AddHeader("REFRESH", "2;URL=./Recipe.aspx")
+        Response.AddHeader("REFRESH", "2;URL=./default.aspx")
     End Sub
 
     Protected Sub DetailsView1_ItemInserted(sender As Object, e As DetailsViewInsertedEventArgs) Handles DetailsView1.ItemInserted
 
-        Response.Redirect("./Recipe.aspx")
+        Response.Redirect("./default.aspx")
 
     End Sub
 
-    Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
-
-        lbldate.Text = DateTime.Now.ToLongDateString
-        lblcopy.Text = DateTime.Now.Year
-
-    End Sub
 
     Protected Sub DetailsView1_ItemUpdated(sender As Object, e As DetailsViewUpdatedEventArgs) Handles DetailsView1.ItemUpdated
-        Response.Redirect("./Recipe.aspx")
+        Response.Redirect("./default.aspx")
     End Sub
 
 

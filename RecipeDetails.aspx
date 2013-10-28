@@ -45,23 +45,42 @@
 
         <div id="container">
 
-            <div id="menu">
+            <div id="content">
+                <h1 class="title">Wicked Easy Recipes</h1>
+                <p class="cont">Using 5 Ingedients or Less!</p>
                 <ul id="nav">
                     <li> <a href="Default.aspx">Home</a></li>
-                    <li> <a href="Recipe.aspx"> View our recipes</a></li>
-                    <li> <a href="NewRecipe.aspx">Add New Recipe</a></li>
-                </ul>
-            </div>
+                    <li> <a href="NewRecipe.aspx"> New Recipe</a></li>
+                    <li> <a href="NewRecipe.aspx">About Us</a></li>
+                    <li> <a href="NewRecipe.aspx">Contact</a></li>
+                </ul><br />
 
-            <div id="date">
-                <asp:Label ID="lbldate" runat="server" Text=""></asp:Label>
-
-            </div>
-
-            <div id="content">
                 <asp:Label ID="lbldelRecipe" runat="server" Text=""></asp:Label>
-        <asp:DetailsView ID="DetailsView1" runat="server" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="Id" DataSourceID="SqlDataSource1" Height="50px" Width="400px">
+        <div id="details">
+        <asp:DetailsView 
+            ID="DetailsView1" 
+            runat="server" 
+            AutoGenerateRows="False" 
+            DataKeyNames="Id" 
+            DataSourceID="SqlDataSource1" 
+            HeaderText ="Recipe Details"
+            CssClass="cssdetailsview"
+            HeaderStyle-CssClass="header"
+            FieldHeaderStyle-CssClass="firldheader"
+            ItemStyle-CssClass="item"
+            AlternatingRowStyle-CssClass="altrow"
+            CommandRowStyle-CssClass="command"
+            pagerStyle-CssClass="pager" Width="430px"
+            
+            >
+            
+<AlternatingRowStyle CssClass="altrow"></AlternatingRowStyle>
+
+<CommandRowStyle CssClass="command"></CommandRowStyle>
+
             <EditRowStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+
+<FieldHeaderStyle CssClass="firldheader"></FieldHeaderStyle>
             <Fields>
                 <asp:BoundField DataField="Recipes" HeaderText="Recipe Name" SortExpression="Recipes" />
                 <asp:BoundField DataField="Name" HeaderText="Submitted By" SortExpression="Name" />
@@ -72,15 +91,22 @@
                 <asp:BoundField DataField="Ingredient5" HeaderText="Ingredient #5" SortExpression="Ingredient5" />
                 <asp:BoundField DataField="Preparation" HeaderText="Preparation" SortExpression="Preparation" />
                 <asp:BoundField DataField="Notes" HeaderText="Notes" SortExpression="Notes" />
-                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowInsertButton="True" />
+                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ButtonType="Button" ShowCancelButton="False" UpdateText="Save" />
             </Fields>
+
+<HeaderStyle CssClass="header"></HeaderStyle>
+
             <PagerSettings FirstPageText="" LastPageText="" NextPageText="" PreviousPageText="" />
+
+<PagerStyle CssClass="pager"></PagerStyle>
         </asp:DetailsView>
                 </div>
+                </div>
+        <br />
 
         <div id="footer">
-                Copyright &copy; <asp:Label ID="lblcopy" runat="server" Text=""></asp:Label> Mike Colbert - 6K183: Systems Analysis &amp; Design
-            </div>
+                Copyright &copy; <asp:Label ID="lblcopy" runat="server" Text=""></asp:Label> 2013. 6K183 Software Design &amp; Development
+            </div><br /><br />
     
     </div>
     </div>

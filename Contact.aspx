@@ -1,6 +1,4 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Default.aspx.vb" Inherits="_Default" %>
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -51,48 +49,11 @@
                     <li> <a href="NewRecipe.aspx">About Us</a></li>
                     <li> <a href="NewRecipe.aspx">Contact</a></li>
                 </ul><br />
+                <p>This website will </p>
+            </div>
+            </div>
+            </div>
 
-        <asp:GridView 
-            ID="GridView1" 
-            runat="server" 
-            AllowPaging="True" 
-            AllowSorting="True" 
-            AutoGenerateColumns="False" 
-            DataKeyNames="Id" 
-            DataSourceID="SqlDataSource1" 
-            PageSize="5"
-            Gridlines="none"
-            CssClass="cssgridview"
-            AlternatingRowStyle-CssClass="alt"
-            PagerStyle-CssClass="pgr" Width="560px"
-           
-            >
-
-
-
-            <AlternatingRowStyle CssClass="alt" />
-
-
-
-            <Columns>
-                <asp:BoundField DataField="Recipes" HeaderText="Recipe Name" SortExpression="Recipes" />
-                <asp:BoundField DataField="Name" HeaderText="Submitted By" SortExpression="Name" />
-                <asp:HyperLinkField DataNavigateUrlFields="Id" HeaderText="Submitted By" DataNavigateUrlFormatString="RecipeDetails.aspx?Id={0}"  Text="View Details" />
-            </Columns>
-            <EmptyDataTemplate>
-                <a href="javascript:__doPostBack('GridView1','Sort$Id')">Id</a>
-            </EmptyDataTemplate>
-            <PagerStyle CssClass="pgr" />
-            <RowStyle HorizontalAlign="Center" VerticalAlign="Middle" />
-        </asp:GridView>
-            </div><br />
-
-        <div id="footer">
-                Copyright &copy; <asp:Label ID="lblcopy" runat="server" Text=""></asp:Label> 2013. 6K183 Software Design &amp; Development
-            </div><br /><br />
-    
-    </div>
-    </div>
     </form>
 </body>
 </html>
