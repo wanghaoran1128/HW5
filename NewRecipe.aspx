@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Add New</title>
     <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
 </head>
 <body>
@@ -51,8 +51,8 @@
                 <ul id="nav">
                     <li> <a href="Default.aspx">Home</a></li>
                     <li> <a href="NewRecipe.aspx"> New Recipe</a></li>
-                    <li> <a href="NewRecipe.aspx">About Us</a></li>
-                    <li> <a href="NewRecipe.aspx">Contact</a></li>
+                    <li> <a href="About.aspx">About Us</a></li>
+                    <li> <a href="Contact.aspx">Contact</a></li>
                 </ul><br />
             <div id="details">
         <asp:DetailsView 
